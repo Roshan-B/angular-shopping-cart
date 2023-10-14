@@ -2,7 +2,9 @@
 <div *ngIf="cartItems.length > 0">
   <div *ngFor="let product of cartItems">
     <div class="cart-item">
-      <img [src]="product.image" alt="{{ product.name }}" width="50" height="50"> <!-- Display the product image -->
+      <a [routerLink]="['/product', product.id]">
+        <img [src]="product.image" alt="{{ product.name }}" width="50" height="50"> <!-- Display the product image -->
+      </a>
       <div class="cart-item-details">
         <h2>{{ product.name }}</h2>
         <p>Price: {{ product.price | currency }}</p>

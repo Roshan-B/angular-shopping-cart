@@ -1,6 +1,4 @@
-// login.component.ts
 import { Component } from '@angular/core';
-// import { AngularFireAuth } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-login',
@@ -8,18 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  // email: string = '';
-  // password: string = '';
+  username: string = '';
+  password: string = '';
+  showPassword : boolean = false;
 
-  // constructor(private afAuth: AngularFireAuth) {}
+  togglePasswordVisibility() {
+    this.showPassword = !this.showPassword;
+  }
+  login() {
+    // Replace these with your desired username and password for authentication
+    const validUsername = 'myusername';
+    const validPassword = 'mypassword';
 
-  // login() {
-  //   this.afAuth.signInWithEmailAndPassword(this.email, this.password)
-  //     .then(() => {
-  //       // Login successful, redirect to a protected route
-  //     })
-  //     .catch((error : string) => {
-  //       console.error('Login error:', error);
-  //     });
-  // }
+    if (this.username === validUsername && this.password === validPassword) {
+      // Successful login
+      console.log('Login successful');
+    } else {
+      // Failed login
+      console.log('Login failed. Please check your username and password.');
+    }
+  }
 }

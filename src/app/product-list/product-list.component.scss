@@ -37,3 +37,32 @@
     cursor: pointer;
   }
 }
+
+/* product.component.css */
+.product {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  font-weight: bold;
+  color: #0d9408; /* Green color for success message */
+  margin-top: 10px;
+}
+

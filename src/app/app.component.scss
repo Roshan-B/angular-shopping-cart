@@ -25,9 +25,11 @@
   
   .nav-link {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-size: 1.2rem;
+    font-family: Arial, sans-serif;
     margin: 0 10px;
+    /* styles.css or app-navigation.component.css */
   }
   
   .container {

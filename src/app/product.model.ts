@@ -6,7 +6,10 @@ export class Product {
     public price: number,
     public description: string,
     public quantity: number = 1,
-    public image: string // Add the 'image' property for the product image URL
+    public image: string, // Add the 'image' property for the product image URL
+    public addedToCart: boolean,
+    public showGoToCartButton: boolean,
+    public successMessage : string
   ) {}
 }
   
