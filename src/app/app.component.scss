@@ -1,0 +1,39 @@
+/* styles.scss or your component's SCSS */
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  
+    img {
+      width: 50px; /* Adjust the width as needed */
+      height: auto;
+      margin-right: 10px; /* Add spacing between the logo and text */
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 10px;
+  }
+  
+  .container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  

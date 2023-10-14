@@ -1,0 +1,39 @@
+/* product-list.component.scss */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: calc(25% - 10px); /* 25% width for each product card with 10px spacing */
+  margin: 10px; /* Adjusted margin to allow four cards in a row */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+}

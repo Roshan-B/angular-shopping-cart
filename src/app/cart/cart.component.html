@@ -1,0 +1,24 @@
+<!-- src/app/cart/cart.component.html -->
+<div *ngIf="cartItems.length > 0">
+  <div *ngFor="let product of cartItems">
+    <div class="cart-item">
+      <img [src]="product.image" alt="{{ product.name }}" width="50" height="50"> <!-- Display the product image -->
+      <div class="cart-item-details">
+        <h2>{{ product.name }}</h2>
+        <p>Price: {{ product.price | currency }}</p>
+        <p>Quantity: {{ product.quantity }}</p>
+      </div>
+      <div class="cart-item-actions">
+        <button (click)="incrementQuantity(product)">+</button>
+        <button (click)="decrementQuantity(product)">-</button>
+        <button (click)="removeProduct(product)">Remove</button>
+      </div>
+    </div>
+  </div>
+  <div class="total-price">
+    <p>Total Price: {{ cartTotalPrice() | currency }}</p>
+  </div>
+</div>
+<div *ngIf="cartItems.length === 0">
+  <p>Your shopping cart is empty.</p>
+</div>
