@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: '', component: ProductListComponent },
   { path: 'cart', component: CartComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'protected', canActivate: [AuthGuard], component: ProtectedComponent },
+  // { path: 'protected', canActivate: [AuthGuard], component: ProtectedComponent },
 ];
 
 @NgModule({

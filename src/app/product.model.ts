@@ -9,3 +9,4 @@ export class Product {
     public image: string // Add the 'image' property for the product image URL
   ) {}
 }
+  

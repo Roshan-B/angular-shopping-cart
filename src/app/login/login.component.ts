@@ -1,6 +1,6 @@
 // login.component.ts
 import { Component } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
+// import { AngularFireAuth } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-login',
